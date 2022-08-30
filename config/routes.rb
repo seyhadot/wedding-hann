@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :skip => :registration
   resources :contacts, path: ''do
     collection do
       post :import
