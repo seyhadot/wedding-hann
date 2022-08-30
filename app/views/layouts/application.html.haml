@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    %title Invitation
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application'
+    = javascript_importmap_tags
+    
+    :css
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+
+    %link#ls-google-fonts-css{:href => "https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&subset=latin%2Clatin-ext", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %link#wpv-gfonts-css{:href => "https://fonts.googleapis.com/css?family=Cinzel%3Anormal%7CClicker+Script%3Anormal%2C300%7CDroid+Sans%3Anormal%7CCinzel+Decorative%3Anormal&subset=cyrillic%2Cgreek%2Clatin&ver=18", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %style#front-all-inline-css{:type => "text/css"}
+      :cdata
+        @media (min-width: 1300px) {
+        body.full header.main-header .first-row { background-size: 101% auto; }
+        }
+        .page-id-6172 header.main-header .first-row,
+        body.page-id-6172 {
+        background: #fff;
+        }
+        body.page-id-6172 .copyrights { display: none }
+    :css
+      .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+  %body{ id: '#{controller_name}_#{params[:action]}' }
+    = yield
+    :javascript
+      jQuery(document).ready(function($){
+        $('.demo1').dsCountDown({
+          endDate: new Date("December 23, 2017 17:59:00")
+        });
+      });
