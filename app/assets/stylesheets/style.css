@@ -3190,13 +3190,13 @@
   }
   
   html {
-    background: url("/assets/bg1.png") repeat center top fixed;
+    background: url("bg1.png") repeat center top fixed;
     background-color: #f8efde;
     background-size: auto;
   }
   
   body {
-    background: url("/assets/flowers2.svg") no-repeat center top fixed;
+    background: url("flowers2.svg") no-repeat center top fixed;
     background-color: #000000;
     background-color: transparent;
     background-size: auto;
