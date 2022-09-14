@@ -81,3 +81,5 @@ gem "haml", "~> 5.2"
 gem "friendly_id", "~> 5.4"
 
 gem "jquery-rails", "~> 4.5"
+
+gem "jquery-countdown-rails", "~> 2.0"

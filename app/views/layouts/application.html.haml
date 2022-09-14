@@ -5,7 +5,9 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application'
     = javascript_importmap_tags
-    
+    = image_tag
+    = meta property="og:image" content='meta.jpg'
+
     :css
       img.wp-smiley,
       img.emoji {
@@ -36,9 +38,4 @@
       .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
   %body{ id: '#{controller_name}_#{params[:action]}' }
     = yield
-    :javascript
-      jQuery(document).ready(function($){
-        $('.demo1').dsCountDown({
-          endDate: new Date("December 23, 2017 17:59:00")
-        });
-      });
+

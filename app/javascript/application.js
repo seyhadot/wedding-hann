@@ -1,5 +1,13 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-//= require jquery
-//= require jquery_ujs
-import "@hotwired/turbo-rails"
-import "controllers"
+import "dscountdown";
+import "jquery.countdown";
+
+import jquery from "jquery";
+window.jQuery = jquery;
+window.$ = jquery;
+
+$(function () {
+  $(".demo1").dsCountDown({
+    endDate: new Date("December 23, 2017 17:59:00"),
+  });
+});
