@@ -6,6 +6,13 @@
     = stylesheet_link_tag    'application'
     = javascript_importmap_tags
 
+    %meta{:content => meta_title, :property => "og:title"}
+    %meta{:content => "website", :property => "og:type"}
+    %meta{:content => request.original_url, :property => "og:url"}
+    %meta{:content => meta_image, :property => "og:image"}
+    %meta{:content => meta_description, :property => "og:description"}
+    %meta{:content => meta_title, :property => "og:site_name"}
+
     :css
       img.wp-smiley,
       img.emoji {
