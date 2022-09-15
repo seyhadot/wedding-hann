@@ -16,3 +16,26 @@
  */
  @import url('https://fonts.googleapis.com/css?family=Passion+One');
  @import url('https://fonts.googleapis.com/css?family=Angkor');
+
+
+
+#clockdiv{
+	font-family: sans-serif;
+	color: rgb(41, 41, 41);
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 40px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+
+.smalltext{
+	padding-top: 15px;
+	font-size: 16px;
+}
